@@ -12,7 +12,8 @@ public class MyApp {
         int millitaryM = 9;
         int archerM = 35;
         int riderM = 12;
-        double quantityM = quantityL * 1.5;
+        double coefficient = 1.5;
+        double quantityM = quantityL * coefficient;
         double generalAttackM = millitaryM * quantityM + archerM * quantityM + riderM * quantityM;
         System.out.println("Загальний показник атаки династії Мінь - " + (int)generalAttackM);
     }
