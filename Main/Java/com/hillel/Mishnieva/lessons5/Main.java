@@ -23,13 +23,16 @@ public class Main {
         int team2Player4 = scanner2.nextInt();
         int team2Player5 = scanner2.nextInt();
 
-        int result1 = (team1Player1 + team1Player2 + team1Player3 + team1Player4 + team1Player5)/5;
-        int result2 = (team2Player1 + team2Player2 + team2Player3 + team2Player4 + team2Player5)/5;
+        double result1 = (double)(team1Player1 + team1Player2 + team1Player3 + team1Player4 + team1Player5)/5;
+        double result2 = (double)(team2Player1 + team2Player2 + team2Player3 + team2Player4 + team2Player5)/5;
 
         if (result1 > result2) {
             System.out.println("Перемогла команда " + teamName1 + " набрала " + result1 + " очків");
+        } else if (result1 == result2) {
+            System.out.println("Нічия, рахунок - " + result1 + " : " + result2);
         } else {
-            System.out.println("Перемогла команда " + teamName2 + " набрала " + result2 + " очків");
+            System.out.println("Перемогла команда " + teamName2 + " набрала " + (result2) + " очків");
         }
     }
 }
+
