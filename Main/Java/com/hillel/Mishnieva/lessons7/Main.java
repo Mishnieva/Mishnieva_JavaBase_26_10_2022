@@ -39,3 +39,4 @@ public class Main {
         System.out.println("Середній вік другої команди: " + result2 + " (" + average2 + ")");
     }
 }
+
