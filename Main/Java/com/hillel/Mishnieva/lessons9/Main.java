@@ -7,7 +7,7 @@ public class Main {
         int N = -1;
         int M = -1;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введіть значення M та N");
+        System.out.println("Введіть значення N та M");
         while (true) {
             if (scanner.hasNextInt()) {
                 N = scanner.nextInt();
