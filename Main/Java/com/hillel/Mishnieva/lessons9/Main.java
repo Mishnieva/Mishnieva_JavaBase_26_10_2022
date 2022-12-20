@@ -21,7 +21,6 @@ public class Main {
         int[][] array = new int[N][M];
         int[][] array2 = new int[M][N];
 
-        for (int i = 0; i < array2.length; i++) array2[i] = new int[N];
         System.out.println("Before");
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
