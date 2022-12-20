@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int N = 2;
-        int M = 4;
+        int N = -1;
+        int M = -1;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть значення M та N");
         while (true) {
