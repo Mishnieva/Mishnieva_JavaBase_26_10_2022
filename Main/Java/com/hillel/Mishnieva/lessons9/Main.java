@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int N = -1;
         int M = -1;
+        int N = -1;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введіть значення N та M");
+        System.out.println("Введіть значення M та N");
         while (true) {
             if (scanner.hasNextInt()) {
-                N = scanner.nextInt();
                 M = scanner.nextInt();
+                N = scanner.nextInt();
                 break;
             } else {
                 System.out.println("Wrong data! Try again");
                 scanner.nextLine();
             }
         }
-        int[][] array = new int[N][M];
-        int[][] array2 = new int[M][N];
+        int[][] array = new int[M][N];
+        int[][] array2 = new int[N][M];
 
         System.out.println("Before");
         for (int i = 0; i < array.length; i++) {
