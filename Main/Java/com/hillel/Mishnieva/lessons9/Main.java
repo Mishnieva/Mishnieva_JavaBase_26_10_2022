@@ -24,7 +24,6 @@ public class Main {
         for (int i = 0; i < array2.length; i++) array2[i] = new int[N];
         System.out.println("Before");
         for (int i = 0; i < array.length; i++) {
-            array[i] = new int[M];
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * 101);
                 System.out.print(array[i][j] + "\t");
