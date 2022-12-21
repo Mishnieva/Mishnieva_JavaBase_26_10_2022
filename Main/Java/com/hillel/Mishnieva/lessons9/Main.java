@@ -8,16 +8,22 @@ public class Main {
         int N = -1;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть значення M та N");
+
         while (true) {
             if (scanner.hasNextInt()) {
                 M = scanner.nextInt();
                 N = scanner.nextInt();
+                if (M > 0 || N > 0) {
                 break;
+                } else {
+                    System.out.println("Wrong.");
+                }
             } else {
                 System.out.println("Wrong data! Try again");
                 scanner.nextLine();
             }
         }
+
         int[][] array = new int[M][N];
         int[][] array2 = new int[N][M];
 
@@ -29,7 +35,7 @@ public class Main {
             }
             System.out.println();
         }
-        for (int i = 0; i <array2.length; i++) {
+        for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2[i].length; j++) {
                 array2[i][j] = array[j][i];
             }
