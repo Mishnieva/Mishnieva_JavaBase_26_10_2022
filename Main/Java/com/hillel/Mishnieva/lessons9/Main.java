@@ -16,7 +16,7 @@ public class Main {
                 if (M > 0 && N > 0) {
                 break;
                 } else {
-                    System.out.println("Wrong.");
+                    System.out.println("Wrong. Please enter a positive numbers");
                 }
             } else {
                 System.out.println("Wrong data! Try again");
