@@ -13,7 +13,7 @@ public class Main {
             if (scanner.hasNextInt()) {
                 M = scanner.nextInt();
                 N = scanner.nextInt();
-                if (M > 0 || N > 0) {
+                if (M > 0 && N > 0) {
                 break;
                 } else {
                     System.out.println("Wrong.");
