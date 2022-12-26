@@ -12,9 +12,16 @@ public class Main {
         while (true) {
             if (scanner.hasNextInt()) {
                 M = scanner.nextInt();
-                N = scanner.nextInt();
-                if (M > 0 && N > 0) {
-                break;
+                scanner.nextLine();
+                if (M > 0) {
+                    if (scanner.hasNextInt()) {
+                        N = scanner.nextInt();
+                        if (N > 0) {
+                            break;
+                        } else {
+                            System.out.println("Wrong. Please enter a positive numbers");
+                        }
+                    }
                 } else {
                     System.out.println("Wrong. Please enter a positive numbers");
                 }
