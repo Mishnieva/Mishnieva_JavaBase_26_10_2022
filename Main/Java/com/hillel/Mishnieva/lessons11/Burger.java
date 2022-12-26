@@ -6,7 +6,6 @@ public class Burger {
     String cheese;
     String verdure;
     String mayonnaise;
-
     String two;
 
 
