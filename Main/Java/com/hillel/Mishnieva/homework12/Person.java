@@ -12,6 +12,7 @@ public class Person {
     int pressureLower;
     int pressureHigh;
     int steps;
+    private int age;
 
     public Person(String name, int data,int month, int year, String mail, String telefon, String surname, double weight, int pressureHigh, int pressureLower, int steps) {
         this.name = name;
@@ -59,7 +60,7 @@ public class Person {
         this.year = year;
     }
 
-    public String getMail(String s) {
+    public String getMail() {
         return mail;
     }
 
@@ -67,7 +68,7 @@ public class Person {
         this.mail = mail;
     }
 
-    public String getTelefon(String s) {
+    public String getTelefon() {
         return telefon;
     }
 
@@ -75,9 +76,12 @@ public class Person {
         this.telefon = telefon;
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public void printAccountInfo() {
-        int age;
         age = 2020 - getYear();
-        System.out.println("Ім'я та прізвище: " + name + " " + surname + "\nДата народження: " + data + "/" + month + "/" + year + "\nBік: " + age + "\nЕмейл: " + mail + "\nТелефон: " + telefon + "\nВага: " + weight + "\nТиск: " + pressureHigh + "/" + pressureLower + "\nКількість пройдених за день кроків: " + steps);
+        System.out.println("Ім'я та прізвище: " + getName() + " " + surname + "\nДата народження: " + getData() + "/" + getMonth() + "/" + getYear() + "\nBік: " + getAge() + "\nЕмейл: " + getMail() + "\nТелефон: " + getTelefon() + "\nВага: " + weight + "\nТиск: " + pressureHigh + "/" + pressureLower + "\nКількість пройдених за день кроків: " + steps);
     }
 }
