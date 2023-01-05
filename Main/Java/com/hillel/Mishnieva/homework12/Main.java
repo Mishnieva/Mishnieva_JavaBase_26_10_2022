@@ -16,12 +16,13 @@ public class Main {
         person4.printAccountInfo();
         System.out.println();
 
-        person2.surname = "Мурай";
-        person1.weight = 79.9;
-        person1.pressureHigh = 120;
-        person1.steps = 15909;
-        person2.setMail("myray@i.ua");
-        person1.setTelefon("066445566");
+
+        person2.setSurname("Мурай");
+        person1.setWeight(79.9);
+        person1.setPressureHigh(120);
+        person1.setSteps(15909);
+        person2.setSteps(343);
+        person2.setPressureLower(70);
 
         person1.printAccountInfo();
         System.out.println();

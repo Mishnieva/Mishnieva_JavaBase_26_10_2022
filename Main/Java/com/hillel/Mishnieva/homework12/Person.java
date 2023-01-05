@@ -7,11 +7,11 @@ public class Person {
     private int year;
     private String mail;
     private String telefon;
-    String surname;
-    double weight;
-    int pressureLower;
-    int pressureHigh;
-    int steps;
+    private String surname;
+    private double weight;
+    private int pressureLower;
+    private int pressureHigh;
+    private int steps;
     private int age;
 
     public Person(String name, int data,int month, int year, String mail, String telefon, String surname, double weight, int pressureHigh, int pressureLower, int steps) {
@@ -32,48 +32,64 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getData() {
         return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
     }
 
     public int getMonth() {
         return month;
     }
 
-    public void setMonth(int month) {
-        this.month = month;
-    }
-
     public int getYear() {
         return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public String getMail() {
         return mail;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-
     public String getTelefon() {
         return telefon;
     }
 
-    public void setTelefon(String telefon) {
-        this.telefon = telefon;
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public int getPressureLower() {
+        return pressureLower;
+    }
+
+    public void setPressureLower(int pressureLower) {
+        this.pressureLower = pressureLower;
+    }
+
+    public int getPressureHigh() {
+        return pressureHigh;
+    }
+
+    public void setPressureHigh(int pressureHigh) {
+        this.pressureHigh = pressureHigh;
+    }
+
+    public int getSteps() {
+        return steps;
+    }
+
+    public void setSteps(int steps) {
+        this.steps = steps;
     }
 
     public int getAge() {
@@ -82,6 +98,6 @@ public class Person {
 
     public void printAccountInfo() {
         age = 2020 - getYear();
-        System.out.println("Ім'я та прізвище: " + getName() + " " + surname + "\nДата народження: " + getData() + "/" + getMonth() + "/" + getYear() + "\nBік: " + getAge() + "\nЕмейл: " + getMail() + "\nТелефон: " + getTelefon() + "\nВага: " + weight + "\nТиск: " + pressureHigh + "/" + pressureLower + "\nКількість пройдених за день кроків: " + steps);
+        System.out.println("Ім'я та прізвище: " + getName() + " " + getSurname() + "\nДата народження: " + getData() + "/" + getMonth() + "/" + getYear() + "\nBік: " + getAge() + "\nЕмейл: " + getMail() + "\nТелефон: " + getTelefon() + "\nВага: " + getWeight() + "\nТиск: " + getPressureHigh() + "/" + getPressureLower() + "\nКількість пройдених за день кроків: " + getSteps());
     }
 }
