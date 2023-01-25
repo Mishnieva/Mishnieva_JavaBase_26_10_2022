@@ -2,29 +2,19 @@ package com.hillel.Mishnieva.homework13.interfac;
 
 public class Androids implements Smartphones,LinuxOS {
 
-    private String nameAndroid;
-
-    public Androids(String nameAndroid) {
-        this.nameAndroid = nameAndroid;
-    }
-
-    public String getNameAndroid() {
-        return nameAndroid;
-    }
-
     @Override
     public void call() {
-        System.out.println(getNameAndroid() + " дзонить");
+        System.out.println("Androids дзонить");
     }
 
     @Override
     public void sms() {
-        System.out.println(getNameAndroid() + " приймає смс");
+        System.out.println("Androids приймає смс");
     }
 
     @Override
     public void internet() {
-        System.out.println(getNameAndroid() + " працює інтернет");
+        System.out.println("Androids працює інтернет");
     }
 
     @Override

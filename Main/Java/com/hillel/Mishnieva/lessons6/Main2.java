@@ -7,6 +7,16 @@ import java.util.Scanner;
 public class Main2 {
     public static void main(String[] args) {
         int rand = (int) (Math.random() * 12 - 1);
+        int rand2 = (int) (Math.random() * 12 - 1);
+        int rand3 = (int) (Math.random() * 12 - 1);
+        int rand44 = (int) (Math.random() * 12 - 1);
+
+
+        System.out.println(rand);
+        System.out.println(rand2);
+        System.out.println(rand3);
+        System.out.println(rand44);
+
         int number = 0;
         int a = 0;
         while (a < 3) {

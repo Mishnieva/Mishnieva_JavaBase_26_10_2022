@@ -2,30 +2,20 @@ package com.hillel.Mishnieva.homework13.interfac;
 
 public class IPhones implements Smartphones, IOS {
 
-    private String nameIphone;
-
-    public IPhones(String nameIphone) {
-        this.nameIphone = nameIphone;
-    }
-
-    public String getNameIphone() {
-        return nameIphone;
-    }
-
     @Override
     public void call() {
-        System.out.println(getNameIphone() + " дзонить");
+        System.out.println("IPhones дзонить");
     }
 
     @Override
     public void sms() {
-        System.out.println(getNameIphone() + " приймає смс");
+        System.out.println("IPhones приймає смс");
 
     }
 
     @Override
     public void internet() {
-        System.out.println(getNameIphone() + " працює інтернет");
+        System.out.println("IPhones працює інтернет");
     }
 
     @Override
